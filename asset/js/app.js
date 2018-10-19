@@ -91,13 +91,14 @@ formulario[2].value = formulario[2].value.trim();
      tr.setAttribute("class", "click"); 
      tr.appendChild(td); 
      tr.appendChild(btn);
-    }); 
-   tbody.appendChild(tr); 
-   btn.addEventListener("click",(evt)=>{
+     btn.addEventListener("click",(evt)=>{
         tbody.removeChild(tr);
-        bitacora.splice(item,1);
+        bitacoras.splice(bitacoras.indexOf(bitacora),1);
     })    
  
+    }); 
+   tbody.appendChild(tr); 
+  
    
   } 
   const eliminar= (tbody)=>{
